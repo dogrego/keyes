@@ -1,1 +1,1 @@
-# Keyes - a Javascript keycode finder
+# Keyes - a JavaScript keycode finder
