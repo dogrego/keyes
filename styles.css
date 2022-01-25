@@ -1,0 +1,115 @@
+:root {
+  --base: #537899;
+  --dark: #304659;
+  --dark80: rgba(34, 51, 66, 0.8);
+  --light: #f5f9fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: Consolas;
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+
+header,
+footer {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  flex-direction: column;
+}
+
+main {
+  margin: auto;
+  max-width: 1200px;
+  height: calc(100vh - 2 * 90px);
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform: translate(-50%, -50%);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform: translate(-50%, -50%);
+  -ms-transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  text-transform: uppercase;
+}
+
+.content-holder {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform: translate(-50%, -50%);
+  -moz-transform-origin: 50% 50%;
+  -ms-transform: translate(-50%, -50%);
+  -ms-transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, 240px);
+  grid-gap: 50px;
+}
+
+.card {
+  width: 240px;
+  height: 90px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light);
+  box-shadow: 5px 5px 18px var(--dark80);
+  transition: transform 0.2s;
+  color: var(--dark);
+  border-top: 5px solid var(--base);
+  cursor: pointer !important;
+}
+
+h2.code {
+  font-size: 10rem;
+  padding-bottom: 3rem;
+}
+
+.event-description {
+  font-size: 2rem;
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: var(--base);
+}
+
+a {
+  color: var(--light);
+}
